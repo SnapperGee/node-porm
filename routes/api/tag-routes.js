@@ -29,7 +29,8 @@ router.get('/:id', async (req, res) => {
         {model: Product}
     ]});
     res.json(tag);
-  } catch (error)
+  }
+  catch (error)
   {
     res.status(500).json(error);
   }
