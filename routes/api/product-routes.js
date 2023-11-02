@@ -10,7 +10,8 @@ router.get('/', async (req, res) => {
   try
   {
     const products = await Product.findAll({include: [
-      {model: Category}, {model: Tag}
+      {model: Category},
+      {model: Tag}
     ]});
     res.json(products);
   } catch (error)
