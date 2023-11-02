@@ -1,0 +1,43 @@
+TAG:
+
+{
+    "tag_name": "Updated Tag"
+}
+
+http://localhost:3001/api/tags/9
+
+{
+    "tag_name": "Newly Named Tag"
+}
+
+CATEGORY:
+
+{
+    "category_name": "New Category"
+}
+
+http://localhost:3001/api/categories/6
+
+{
+    "category_name": "Updated Category"
+}
+
+PRODUCT:
+
+{
+    "product_name": "New Product",
+    "price": 100,
+    "stock": 0,
+    "category_id": 6,
+    "tagIds": [9]
+}
+
+http://localhost:3001/api/products/6
+
+{
+    "product_name": "Updated Product",
+    "price": 9,
+    "stock": 99,
+    "category_id": 2,
+    "tagIds": [1]
+}
