@@ -14,7 +14,8 @@ router.get('/', async (req, res) => {
       {model: Tag}
     ]});
     res.json(products);
-  } catch (error)
+  }
+  catch (error)
   {
     res.status(500).json(error);
   }
@@ -31,7 +32,8 @@ router.get('/:id', async (req, res) => {
       {model: Tag}
     ]});
     res.json(products);
-  } catch (error)
+  }
+  catch (error)
   {
     res.status(500).json(error);
   }
@@ -116,8 +118,15 @@ router.put('/:id', (req, res) => {
 
 router.delete('/:id', async (req, res) => {
   // delete one product by its `id` value
-  const numOfDeleted = await Product.destroy({where: { id: parseInt(req.params.id) }});
-  res.json(numOfDeleted);
+  try
+  {
+    const numOfDeleted = await Product.destroy({where: { id: parseInt(req.params.id) }});
+    res.json(numOfDeleted);
+  }
+  catch (error)
+  {
+    res.status(500).json(error);
+  }
 });
 
 module.exports = router;
