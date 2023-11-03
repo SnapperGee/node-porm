@@ -119,8 +119,14 @@ Refer to the [product model](#product) for its properties.
 
 A video demo showcasing this application's functionality can be found [HERE](.).
 
-## Package Scripts
+## Package Utilities
 
 This package contains the `db` and `seeds` directories. The `db` directory contains the SQL to drop and then recreate
 the database. The `seeds` directory contains scripts to seed the database with data. Both of these are destructive
 operations and result in the loss of all data in the database. Use if a fresh database state is needed.
+
+The seed scripts can be run via:
+
+```bash
+npm run seed
+```
