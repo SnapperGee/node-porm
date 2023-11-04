@@ -117,7 +117,8 @@ Refer to the [product model](#product) for its properties.
 
 ## Demo
 
-A video demo showcasing this application's functionality can be found [HERE](.).
+A video demo showcasing this application's functionality can be found
+[HERE](https://drive.google.com/file/d/1CaXLXT-EZwCU-05TT8VjdEi-bYAoA7s2/view?usp=sharing).
 
 ## Package Utilities
 
