@@ -131,3 +131,9 @@ The seed scripts can be run via:
 ```bash
 npm run seed
 ```
+
+The application express server can be started via:
+
+```bash
+npm start
+```
